@@ -23,6 +23,17 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScroll = currentScroll;
     });
 
+    // --- Mobile Menu Toggle ---
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mainNav = document.getElementById('mainNav');
+
+    if (mobileMenuBtn && mainNav) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            mobileMenuBtn.textContent = mainNav.classList.contains('active') ? 'Cerrar ✕' : 'Menu ☰';
+        });
+    }
+
     // --- Animación de entrada para las tarjetas (Lazy Load / Fade In) ---
     const observerOptions = {
         threshold: 0.1
