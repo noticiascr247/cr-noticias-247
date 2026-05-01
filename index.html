@@ -8,22 +8,16 @@
     <!-- SEO Meta Tags -->
     <meta name="description" content="Su fuente confiable de noticias sobre economía, tecnología, sostenibilidad e innovación en Costa Rica. Análisis profundo y actualidad al minuto.">
     <meta name="keywords" content="noticias costa rica, economía cr, tecnología cr, sostenibilidad, periodismo profesional">
-    <meta name="author" content="CR Noticias 24/7">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-    <link rel="apple-touch-icon" href="assets/favicons/apple-icon-180x180.png">
-
     <!-- Google AdSense -->
-    <!-- Reemplace pub-XXXXXXXXXXXXXXX con su ID real de editor -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3859560490589198"
      crossorigin="anonymous"></script>
 </head>
@@ -39,16 +33,14 @@
     </div>
 
     <header>
-        <div class="container header-main">
+        <div class="container header-top">
             <a href="index.html" class="logo">CR <span>Noticias 24/7</span></a>
             <nav class="nav-menu">
                 <a href="index.html" class="nav-link active">Inicio</a>
                 <a href="#" class="nav-link">Economía</a>
                 <a href="#" class="nav-link">Tecnología</a>
-                <a href="#" class="nav-link">Sostenibilidad</a>
                 <a href="contacto.html" class="nav-link">Contacto</a>
             </nav>
-            <div class="mobile-toggle">☰</div>
         </div>
     </header>
 
@@ -59,12 +51,12 @@
         </div>
 
         <!-- HERO SECTION -->
-        <section class="hero-grid">
-            <a href="noticias/sostenibilidad-energia-limpia.html" class="hero-card">
+        <section class="hero">
+            <a href="noticias/sostenibilidad-energia-limpia.html" class="hero-main">
                 <img src="https://images.unsplash.com/photo-1466611653911-95282fc3656b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Sostenibilidad CR">
-                <div class="hero-content">
-                    <span class="tag">Sostenibilidad</span>
-                    <h1>Costa Rica: Líder en Energías Renovables hacia el 2030</h1>
+                <div class="hero-overlay">
+                    <span class="category-tag">Sostenibilidad</span>
+                    <h1 class="hero-title">Costa Rica: Líder en Energías Renovables hacia el 2030</h1>
                     <p>El país alcanza un nuevo hito operando más de 300 días exclusivamente con energía limpia.</p>
                 </div>
             </a>
@@ -73,21 +65,21 @@
                 <a href="noticias/tecnologia-hub-regional.html" class="side-card">
                     <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Tech">
                     <div class="side-card-content">
-                        <span class="tag">Tecnología</span>
+                        <span class="category-tag">Tecnología</span>
                         <h3>Hub Tecnológico en Centroamérica</h3>
                     </div>
                 </a>
                 <a href="noticias/economia-cr-2024.html" class="side-card">
                     <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Economía">
                     <div class="side-card-content">
-                        <span class="tag">Economía</span>
+                        <span class="category-tag">Economía</span>
                         <h3>Perspectivas del PIB para el 2024</h3>
                     </div>
                 </a>
                 <a href="noticias/turismo-medico-crecimiento.html" class="side-card">
                     <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Salud">
                     <div class="side-card-content">
-                        <span class="tag">Salud</span>
+                        <span class="category-tag">Salud</span>
                         <h3>Turismo Médico: Calidad y Bienestar</h3>
                     </div>
                 </a>
@@ -95,37 +87,35 @@
         </section>
 
         <!-- MAIN LAYOUT -->
-        <div class="main-layout">
+        <div class="main-wrapper">
             
             <section class="content-area">
-                <div class="section-head">
-                    <h2>Últimas Noticias</h2>
-                </div>
+                <h2 class="section-title">Últimas Noticias</h2>
 
                 <div class="news-grid">
                     <!-- Article 1 -->
-                    <article class="article-card">
-                        <a href="noticias/educacion-ia-futuro.html" class="article-img">
+                    <article class="news-card">
+                        <a href="noticias/educacion-ia-futuro.html" class="card-img">
                             <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Educación">
                         </a>
-                        <div class="article-body">
-                            <span class="tag">Innovación</span>
-                            <h3 class="article-title">La IA transforma la Educación</h3>
-                            <p class="article-excerpt">Personalización y nuevos retos éticos en las aulas costarricenses.</p>
-                            <a href="noticias/educacion-ia-futuro.html" style="color: var(--primary); font-weight: bold; font-size: 13px;">Leer Más &rarr;</a>
+                        <div class="card-content">
+                            <span class="category-tag">Innovación</span>
+                            <h3 class="card-title">La IA transforma la Educación</h3>
+                            <p class="card-excerpt">Personalización y nuevos retos éticos en las aulas costarricenses.</p>
+                            <a href="noticias/educacion-ia-futuro.html" class="btn-more">Leer Más &rarr;</a>
                         </div>
                     </article>
 
                     <!-- Article 2 -->
-                    <article class="article-card">
-                        <a href="noticias/tecnologia-hub-regional.html" class="article-img">
+                    <article class="news-card">
+                        <a href="noticias/tecnologia-hub-regional.html" class="card-img">
                             <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tech">
                         </a>
-                        <div class="article-body">
-                            <span class="tag">Tecnología</span>
-                            <h3 class="article-title">Inversión en Ciberseguridad</h3>
-                            <p class="article-excerpt">Grandes empresas fortalecen sus centros de datos en el país.</p>
-                            <a href="noticias/tecnologia-hub-regional.html" style="color: var(--primary); font-weight: bold; font-size: 13px;">Leer Más &rarr;</a>
+                        <div class="card-content">
+                            <span class="category-tag">Tecnología</span>
+                            <h3 class="card-title">Inversión en Ciberseguridad</h3>
+                            <p class="card-excerpt">Grandes empresas fortalecen sus centros de datos en el país.</p>
+                            <a href="noticias/tecnologia-hub-regional.html" class="btn-more">Leer Más &rarr;</a>
                         </div>
                     </article>
                 </div>
@@ -136,15 +126,15 @@
 
                 <div class="news-grid" style="margin-top: 30px;">
                     <!-- Article 3 -->
-                    <article class="article-card">
-                        <a href="noticias/economia-cr-2024.html" class="article-img">
+                    <article class="news-card">
+                        <a href="noticias/economia-cr-2024.html" class="card-img">
                             <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Economía">
                         </a>
-                        <div class="article-body">
-                            <span class="tag">Economía</span>
-                            <h3 class="article-title">Control de la Inflación</h3>
-                            <p class="article-excerpt">El Banco Central mantiene estabilidad pero el tipo de cambio preocupa.</p>
-                            <a href="noticias/economia-cr-2024.html" style="color: var(--primary); font-weight: bold; font-size: 13px;">Leer Más &rarr;</a>
+                        <div class="card-content">
+                            <span class="category-tag">Economía</span>
+                            <h3 class="card-title">Control de la Inflación</h3>
+                            <p class="card-excerpt">El Banco Central mantiene estabilidad pero el tipo de cambio preocupa.</p>
+                            <a href="noticias/economia-cr-2024.html" class="btn-more">Leer Más &rarr;</a>
                         </div>
                     </article>
                 </div>
@@ -152,12 +142,12 @@
 
             <!-- SIDEBAR -->
             <aside>
-                <div class="ad-wrapper ad-rectangle">
+                <div class="ad-wrapper ad-sidebar">
                     <!-- Anuncio Sidebar -->
                 </div>
 
-                <div class="sidebar-box">
-                    <h3 class="sidebar-title">Lo más popular</h3>
+                <section>
+                    <h3 class="section-title">Lo más popular</h3>
                     <div class="popular-item">
                         <span class="popular-num">01</span>
                         <a href="#" class="popular-text">Cómo proteger sus finanzas personales</a>
@@ -170,7 +160,7 @@
                         <span class="popular-num">03</span>
                         <a href="#" class="popular-text">Avances en medicina regenerativa en CR</a>
                     </div>
-                </div>
+                </section>
 
                 <div class="ad-wrapper ad-vertical" style="position: sticky; top: 100px;">
                     <!-- Anuncio Fijo Sidebar -->
@@ -185,32 +175,20 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <div class="logo" style="color: white; font-size: 24px; margin-bottom: 20px;">CR <span style="color: #c41e3a;">Noticias 24/7</span></div>
-                    <p style="color: #bdc3c7; font-size: 14px;">Su fuente líder de noticias veraces y análisis profundo. Comprometidos con el periodismo de calidad.</p>
-                </div>
-                <div>
-                    <h4 class="footer-title">Secciones</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Economía</a></li>
-                        <li><a href="#">Tecnología</a></li>
-                        <li><a href="#">Sostenibilidad</a></li>
-                        <li><a href="#">Salud</a></li>
-                    </ul>
+                    <div class="footer-logo">CR <span>Noticias 24/7</span></div>
+                    <p class="footer-text">Su fuente líder de noticias veraces y análisis profundo. Comprometidos con el periodismo de calidad.</p>
                 </div>
                 <div>
                     <h4 class="footer-title">Información</h4>
                     <ul class="footer-links">
                         <li><a href="privacy.html">Política de Privacidad</a></li>
-                        <li><a href="#">Términos y Condiciones</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-title">Síguenos</h4>
+                    <h4 class="footer-title">Redes Sociales</h4>
                     <ul class="footer-links">
                         <li><a href="https://www.facebook.com/profile.php?id=61589197520816">Facebook</a></li>
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">Twitter (X)</a></li>
                     </ul>
                 </div>
             </div>
