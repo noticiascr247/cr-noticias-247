@@ -180,10 +180,22 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.card-img { height: 200px; }
-.card-img img { width: 100%; height: 100%; object-fit: cover; }
+.card-img { 
+    height: 200px; 
+    overflow: hidden; /* Asegura que la imagen no se salga al hacer zoom */
+}
 
-.card-body { padding: 20px; }
+.card-img img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center top; /* Evita cortar cabezas en las fotos de políticos */
+    transition: transform 0.5s ease;
+}
+
+.news-card:hover .card-img img {
+    transform: scale(1.1); /* Efecto dinámico profesional */
+}
 .card-title { font-size: 18px; font-weight: bold; margin-bottom: 10px; }
 .card-text { font-size: 14px; color: #666; }
 
