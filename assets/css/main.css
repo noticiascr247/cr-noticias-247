@@ -14,7 +14,7 @@ body {
     color: #333;
 }
 
-a { text-decoration: none; color: inherit; }
+a { text-decoration: none; color: inherit; transition: 0.3s; }
 
 .container {
     max-width: 1100px;
@@ -144,13 +144,36 @@ header {
     opacity: 0.9;
 }
 
-/* --- AD VERTICAL --- */
-.ad-vertical {
-    width: 300px;
-    height: 600px;
-    background: #eee;
-    border: 1px dashed #ccc;
+/* --- HERO SIDEBAR (NUEVO) --- */
+.hero-sidebar {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
+
+.sidebar-head {
+    font-weight: 900;
+    font-size: 14px;
+    color: var(--primary-red);
+    border-bottom: 2px solid var(--primary-red);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.popular-list { list-style: none; }
+.popular-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+.popular-list li:last-child { border: none; }
+.popular-list a {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--dark-blue);
+    line-height: 1.4;
+}
+.popular-list a:hover { color: var(--primary-red); }
 
 /* --- NOTICIAS DE HOY --- */
 .section-head {
@@ -196,6 +219,8 @@ header {
 .news-card:hover .card-img img {
     transform: scale(1.1); /* Efecto dinámico profesional */
 }
+
+.card-body { padding: 20px; }
 .card-title { font-size: 18px; font-weight: bold; margin-bottom: 10px; }
 .card-text { font-size: 14px; color: #666; }
 
@@ -220,8 +245,7 @@ footer {
 
 @media (max-width: 900px) {
     .hero-container { grid-template-columns: 1fr; }
-    .ad-vertical { width: 100%; height: 250px; }
     .nav-bar ul { flex-wrap: wrap; }
 }
-/* Actualización Total: Thu Apr 30 20:18:05 CST 2026 */
-/* Update: Thu Apr 30 20:34:07 CST 2026 */
+/* Actualización Total: Fri May  1 02:37:12 2026 */
+/* Update: Fri May  1 02:34:07 2026 */
